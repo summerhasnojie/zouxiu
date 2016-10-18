@@ -1,0 +1,37 @@
+<header>
+	<a href="javascript:;" class="back-btn" ng-if="page.hasBack" ng-click="page.goPage('back')">
+		<span class="iconfont icon-headBack"></span>
+	</a>
+	<h2>{{page.headerTxt}}</h2>
+	<a href="javascript:;" class="right-btn" ng-if="page.hasShopCar" ng-click = "page.addChopCar()">
+		<span class="iconfont"></span>
+	</a>
+	<a href="javascript:;" class="right-btn" ng-if="page.hasCount" ng-click="page.countCar()">结算</a>
+</header>
+<article ui-view class="main">
+	
+</article>
+<footer>
+	<nav class="clrFix">
+		<a href="javascript:;" class="btn" ng-click = "page.goPage('home')" ng-class="{'active':page.pageId == 'home'}">
+			<div class="iconfont icon-menuHome"></div>
+			<p>首页</p>
+		</a>
+		<a href="javascript:;" class="btn" ng-click = "page.goPage('goodsClass')" ng-class="{'active':page.pageId == 'goodsClass'}">
+			<div class="iconfont icon-menuClass"></div>
+			<p>分类</p>
+		</a>
+		<a href="javascript:;" class="btn" ng-click = "page.goPage('shopCar')" ng-class="{'active':page.pageId == 'shopCar'}">
+			<div class="iconfont icon-menuShop"></div>
+			<p>购物车</p>
+		</a>
+		<a href="javascript:;" class="btn" ng-click = "page.goPage('show')" ng-class="{'active':page.pageId == 'show'}">
+			<div class="iconfont icon-menuMy"></div>
+			<p>我的秀</p>
+		</a>
+		<a href="javascript:;" class="btn" ng-click = "page.goPage('more')" ng-class="{'active':page.pageId == 'more'}">
+			<div class="iconfont icon-menuMore"></div>
+			<p>更多</p>
+		</a>
+	</nav>
+</footer>

@@ -1,0 +1,121 @@
+/*头部*/
+header{
+	border-top:1px solid #c92b2a;
+	height: 0.86rem;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	
+background: #b62222;
+background: -moz-linear-gradient(top, #b62222 0%, #a21412 100%);
+background: -webkit-linear-gradient(top, #b62222 0%, #a21412 100%);
+background: linear-gradient(to bottom, #b62222 0%, #a21412 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b62222', endColorstr='#a21412', GradientType=0);
+}
+header h2{
+	height: 100%;
+	text-align: center;
+	line-height: 0.86rem;
+	font:100 0.36rem/0.86rem "微软雅黑";
+	color: #fff;
+}
+header .back-btn{
+	display: block;
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	width: 0.86rem;
+	text-align: center;
+	line-height:  0.86rem;
+	color: #fff;
+}
+
+/*主体内容*/
+.main{
+	padding: 0.86rem 0 0.96rem 0;
+}
+
+/*底部*/
+footer{
+	height: 0.96rem;
+	width: 100%;
+	background: #484850;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+footer .btn{
+	display: block;
+	float: left;
+	height: 100%;
+	width: 20%;
+	text-align: center;
+	color: #fff;
+	box-sizing: border-box;
+}
+footer .btn.active{
+	border-top: 2px solid #d71110;
+}
+footer .btn.active .iconfont{
+	margin-top: -2px;
+}
+footer .iconfont{
+	height: 0.46rem;
+	line-height: 0.56rem;
+	
+}
+
+@media only screen and (min-width: 320px) {
+	html {
+		/*此时1rem = 12px;*/
+		font-size: 50px;
+	}
+}
+@media only screen and (min-width: 375px) {
+	html {
+		font-size: 58.59375px;
+	}
+}
+@media only screen and (min-width: 414px) {
+	html {
+		font-size: 64.6875px;
+	}
+}
+@media only screen and (min-width: 480px) {
+	html {
+		font-size: 75px;
+	}
+}
+@media only screen and (min-width: 560px) {
+	html {
+		font-size: 87.5px;
+	}
+}
+@media only screen and (min-width: 640px) {
+	html {
+		/*此时 1rem = 200px*/
+		font-size: 100px;
+	}
+}
+@media only screen and (min-width: 720px) {
+	html {
+		font-size: 112.5px;
+	}
+}
+@media only screen and (min-width: 750px) {
+	html {
+		font-size: 117.1875px;
+	}
+}
+@media only screen and (min-width: 800px) {
+	html {
+		font-size: 125px;
+	}
+}
+@media only screen and (min-width: 960px) {
+	html {
+		font-size: 150px;
+	}
+}

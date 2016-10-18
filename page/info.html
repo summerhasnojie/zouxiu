@@ -1,0 +1,13 @@
+<header>
+	<a href="javascript:;" class="back-btn" ng-if="page.hasBack" ng-click="page.goPage('back')">
+		<span class="iconfont icon-headBack"></span>
+	</a>
+	<h2>{{page.headerTxt}}</h2>
+	<a href="javascript:;" class="right-btn" ng-if="page.hasShopCar" ng-click = "page.addChopCar()">
+		<span class="iconfont"></span>
+	</a>
+	<a href="javascript:;" class="right-btn" ng-if="page.hasCount" ng-click="page.countCar()">结算</a>
+</header>
+<article class="main" ui-view>
+	
+</article>
